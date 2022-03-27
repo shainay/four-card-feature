@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: auto;
+    width: 80%;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.box-section {
+    margin-top: 50px;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+header {
+    white-space: nowrap;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    color: hsl(229, 6%, 66%);
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.heading h2 {
+    color: hsl(234, 12%, 34%);
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.heading p {
+    text-align: center;
+    font-size: 1.2rem;
+    white-space: pre-wrap;
+    margin-top: 10px;
+}
+
+.col {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 18px auto;
+    height: 200px;
+    padding: 25px;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.col img {
+    position: absolute;
+    padding: 15px;
+    right: 0;
+    bottom: 0;
+}
+
+.col h3 {
+    font-size: 1.3rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.col::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.col-cyan::after {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.col-red::after {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.col-orange::after {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.col-blue::after {
+    background-color: hsl(212, 86%, 64%);
+}
+
+@media (min-width: 768px) {
+    .box-section {
+        display: flex;
+        align-items: center;
+    }
+    .col {
+        margin: 18px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
